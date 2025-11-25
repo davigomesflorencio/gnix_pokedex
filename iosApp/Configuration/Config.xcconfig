@@ -1,0 +1,7 @@
+TEAM_ID=
+
+PRODUCT_NAME=gnixpokedex
+PRODUCT_BUNDLE_IDENTIFIER=com.davi.dev.gnixpokedex.gnixpokedex$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=1.0
