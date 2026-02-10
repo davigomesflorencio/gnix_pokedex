@@ -1,3 +1,8 @@
+<div>
+<img src="./screenshots/0.jpeg" alt="drawing" style="width:auto;"/>
+
+</div>
+
 # GnixPokedex 📱
 
 Aplicativo de Pokedex desenvolvido para estudo e aprendizado de **Kotlin Multiplatform (KMP)**, demonstrando a criação de aplicativos mobile multiplataforma para Android e iOS utilizando código compartilhado.
@@ -43,28 +48,28 @@ gnixpokedex/
 ### Design Patterns Implementados
 
 1. **Clean Architecture**
-   - Separação em camadas: Domain, Data, Presentation
-   - Independência de frameworks e UI
+    - Separação em camadas: Domain, Data, Presentation
+    - Independência de frameworks e UI
 
 2. **MVVM (Model-View-ViewModel)**
-   - ViewModels para gerenciamento de estado
-   - Separação entre lógica de apresentação e UI
+    - ViewModels para gerenciamento de estado
+    - Separação entre lógica de apresentação e UI
 
 3. **Repository Pattern**
-   - Abstração da fonte de dados (API + Database)
-   - Fonte única de verdade para os dados
+    - Abstração da fonte de dados (API + Database)
+    - Fonte única de verdade para os dados
 
 4. **Use Cases (Interactors)**
-   - Lógica de negócio isolada e reutilizável
-   - Responsabilidades bem definidas
+    - Lógica de negócio isolada e reutilizável
+    - Responsabilidades bem definidas
 
 5. **Dependency Injection**
-   - Injeção de dependências com Koin
-   - Modularização e testabilidade
+    - Injeção de dependências com Koin
+    - Modularização e testabilidade
 
 6. **Feature Modules**
-   - Módulos independentes por funcionalidade
-   - Facilita manutenção e escalabilidade
+    - Módulos independentes por funcionalidade
+    - Facilita manutenção e escalabilidade
 
 ## 🛠️ Tecnologias e Bibliotecas
 
@@ -79,43 +84,43 @@ gnixpokedex/
 ### Dependency Injection
 
 - **Koin 4.1.0** - Framework de injeção de dependências
-  - `koin-core` - Core multiplataforma
-  - `koin-android` - Extensões Android
-  - `koin-compose-viewmodel` - Integração com ViewModels no Compose
+    - `koin-core` - Core multiplataforma
+    - `koin-android` - Extensões Android
+    - `koin-compose-viewmodel` - Integração com ViewModels no Compose
 
 ### Networking
 
 - **Ktor 3.2.1** - Cliente HTTP multiplataforma
-  - `ktor-client-core` - Cliente HTTP base
-  - `ktor-client-okhttp` - Engine Android (OkHttp)
-  - `ktor-client-darwin` - Engine iOS
-  - `ktor-client-content-negotiation` - Negociação de conteúdo
-  - `ktor-serialization-kotlinx-json` - Serialização JSON
-  - `ktor-client-logging` - Logging de requisições
+    - `ktor-client-core` - Cliente HTTP base
+    - `ktor-client-okhttp` - Engine Android (OkHttp)
+    - `ktor-client-darwin` - Engine iOS
+    - `ktor-client-content-negotiation` - Negociação de conteúdo
+    - `ktor-serialization-kotlinx-json` - Serialização JSON
+    - `ktor-client-logging` - Logging de requisições
 
 ### Database
 
 - **Room 2.7.2** - Biblioteca de persistência Android
-  - SQLite como banco de dados local
-  - SQLite Bundled 2.5.2 - SQLite multiplataforma
-  - KSP (Kotlin Symbol Processing) para geração de código
+    - SQLite como banco de dados local
+    - SQLite Bundled 2.5.2 - SQLite multiplataforma
+    - KSP (Kotlin Symbol Processing) para geração de código
 
 ### UI & Navigation
 
 - **Compose Multiplatform 1.8.2**
-  - UI declarativa e compartilhada
-  - Material 3 Design System
-  - Preview e tooling
+    - UI declarativa e compartilhada
+    - Material 3 Design System
+    - Preview e tooling
 - **Navigation Compose 2.9.0-beta03** - Navegação entre telas
 - **Kamel 1.0.6** - Carregamento e cache de imagens
-  - `kamel-image` - Core de imagens
-  - `kamel-image-compose` - Integração com Compose
+    - `kamel-image` - Core de imagens
+    - `kamel-image-compose` - Integração com Compose
 
 ### Lifecycle & State
 
 - **AndroidX Lifecycle 2.9.1**
-  - `lifecycle-viewmodel` - ViewModels
-  - `lifecycle-runtime-compose` - Runtime para Compose
+    - `lifecycle-viewmodel` - ViewModels
+    - `lifecycle-runtime-compose` - Runtime para Compose
 
 ### Code Quality
 

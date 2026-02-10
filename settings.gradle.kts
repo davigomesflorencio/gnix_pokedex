@@ -1,4 +1,4 @@
-rootProject.name = "gnixpokedex"
+rootProject.name = "Gnix_kmp_pokedex"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
@@ -28,13 +28,7 @@ dependencyResolutionManagement {
     }
 }
 
-plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
-}
-
-
-include(":shared")
-
+include(":composeApp")
 include("core:common")
 include("core:model")
 include("core:database")
@@ -46,4 +40,3 @@ include("core:ui")
 include(":feature:home")
 include(":feature:details")
 include(":feature:favorite")
-include(":androidApp")

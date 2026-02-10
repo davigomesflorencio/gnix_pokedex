@@ -7,8 +7,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.DefaultAlpha
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalInspectionMode
-import gnixpokedex.core.ui.generated.resources.Res
-import gnixpokedex.core.ui.generated.resources.pokeball
+import gnix_kmp_pokedex.core.ui.generated.resources.Res
+import gnix_kmp_pokedex.core.ui.generated.resources.pokeball
 import io.kamel.image.KamelImage
 import io.kamel.image.asyncPainterResource
 import org.jetbrains.compose.resources.painterResource

@@ -43,8 +43,8 @@ kotlin {
             implementation(projects.core.ui)
 
             // lifecycle
-            implementation(libs.androidx.lifecycle.viewmodel)
-            implementation(libs.androidx.lifecycle.runtime.compose)
+            implementation(libs.androidx.lifecycle.viewmodelCompose)
+            implementation(libs.androidx.lifecycle.runtimeCompose)
 
             // koin
             implementation(libs.koin.compose.viewmodel)
@@ -73,6 +73,6 @@ android {
 }
 
 dependencies {
-    debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.compose.uiTooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }

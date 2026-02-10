@@ -2,26 +2,9 @@ package core.ui.core.ui.painter
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.painter.Painter
+import gnix_kmp_pokedex.core.ui.generated.resources.Res
+import gnix_kmp_pokedex.core.ui.generated.resources.*
 import org.jetbrains.compose.resources.painterResource
-import gnixpokedex.core.ui.generated.resources.Res
-import gnixpokedex.core.ui.generated.resources.bug
-import gnixpokedex.core.ui.generated.resources.dark
-import gnixpokedex.core.ui.generated.resources.dragon
-import gnixpokedex.core.ui.generated.resources.electric
-import gnixpokedex.core.ui.generated.resources.fairy
-import gnixpokedex.core.ui.generated.resources.fighting
-import gnixpokedex.core.ui.generated.resources.fire
-import gnixpokedex.core.ui.generated.resources.flying
-import gnixpokedex.core.ui.generated.resources.ghost
-import gnixpokedex.core.ui.generated.resources.grass
-import gnixpokedex.core.ui.generated.resources.ground
-import gnixpokedex.core.ui.generated.resources.ice
-import gnixpokedex.core.ui.generated.resources.normal
-import gnixpokedex.core.ui.generated.resources.poison
-import gnixpokedex.core.ui.generated.resources.psychic
-import gnixpokedex.core.ui.generated.resources.rock
-import gnixpokedex.core.ui.generated.resources.steel
-import gnixpokedex.core.ui.generated.resources.water
 
 @Composable
 private fun bugPainter(): Painter = painterResource(Res.drawable.bug)

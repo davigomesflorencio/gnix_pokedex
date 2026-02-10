@@ -6,7 +6,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -14,12 +13,8 @@ import core.ui.core.ui.composable.AdaptiveLayout
 import core.ui.core.ui.composable.AppBarHeight
 import core.ui.core.ui.composable.AppIconButton
 import core.ui.core.ui.composable.AppTopBar
-import core.ui.core.ui.painter.closePainter
-import core.ui.core.ui.painter.iconSearchPainter
 import core.ui.core.ui.painter.starPainter
 import core.ui.core.ui.theme.AppShape
-import gnixpokedex.feature.home.generated.resources.Res
-import org.jetbrains.compose.resources.painterResource
 
 @Composable
 fun HomeBarWithShadow(

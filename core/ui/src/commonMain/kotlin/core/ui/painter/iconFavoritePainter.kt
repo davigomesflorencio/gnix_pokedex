@@ -2,9 +2,9 @@ package core.ui.core.ui.painter
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.painter.Painter
-import gnixpokedex.core.ui.generated.resources.Res
-import gnixpokedex.core.ui.generated.resources.ic_heart
-import gnixpokedex.core.ui.generated.resources.ic_heart_full
+import gnix_kmp_pokedex.core.ui.generated.resources.Res
+import gnix_kmp_pokedex.core.ui.generated.resources.ic_heart
+import gnix_kmp_pokedex.core.ui.generated.resources.ic_heart_full
 import org.jetbrains.compose.resources.painterResource
 
 @Composable
