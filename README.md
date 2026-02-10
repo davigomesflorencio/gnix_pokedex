@@ -14,6 +14,7 @@ Este projeto é uma aplicação educacional que implementa uma Pokedex completa,
 ## 🎯 Objetivo
 
 Aplicativo desenvolvido exclusivamente para **estudo do Kotlin Multiplatform**, explorando conceitos como:
+
 - Arquitetura multiplataforma
 - Compartilhamento de código entre Android e iOS
 - Padrões de design aplicados em KMP
@@ -28,7 +29,7 @@ O projeto segue os princípios da **Clean Architecture** com separação clara d
 ### Estrutura de Módulos
 
 ```
-gnixpokedex/
+gnix_pokedex/
 ├── core/
 │   ├── common/          # Utilitários e extensões compartilhadas
 │   ├── model/           # Modelos de dados
@@ -41,35 +42,35 @@ gnixpokedex/
 │   ├── home/            # Feature de listagem de Pokémons
 │   ├── details/         # Feature de detalhes do Pokémon
 │   └── favorite/        # Feature de favoritos
-├── shared/              # Módulo principal de composição
-└── androidApp/          # Aplicativo Android
+├── composeApp/         # Aplicativo principal (Android e Lógica Compartilhada UI)
+└── iosApp/              # Aplicativo iOS (Swift/Xcode)
 ```
 
 ### Design Patterns Implementados
 
 1. **Clean Architecture**
-    - Separação em camadas: Domain, Data, Presentation
-    - Independência de frameworks e UI
+   - Separação em camadas: Domain, Data, Presentation
+   - Independência de frameworks e UI
 
 2. **MVVM (Model-View-ViewModel)**
-    - ViewModels para gerenciamento de estado
-    - Separação entre lógica de apresentação e UI
+   - ViewModels para gerenciamento de estado
+   - Separação entre lógica de apresentação e UI
 
 3. **Repository Pattern**
-    - Abstração da fonte de dados (API + Database)
-    - Fonte única de verdade para os dados
+   - Abstração da fonte de dados (API + Database)
+   - Fonte única de verdade para os dados
 
 4. **Use Cases (Interactors)**
-    - Lógica de negócio isolada e reutilizável
-    - Responsabilidades bem definidas
+   - Lógica de negócio isolada e reutilizável
+   - Responsabilidades bem definidas
 
 5. **Dependency Injection**
-    - Injeção de dependências com Koin
-    - Modularização e testabilidade
+   - Injeção de dependências com Koin
+   - Modularização e testabilidade
 
 6. **Feature Modules**
-    - Módulos independentes por funcionalidade
-    - Facilita manutenção e escalabilidade
+   - Módulos independentes por funcionalidade
+   - Facilita manutenção e escalabilidade
 
 ## 🛠️ Tecnologias e Bibliotecas
 
@@ -77,50 +78,50 @@ gnixpokedex/
 
 - **Kotlin Multiplatform (KMP)** - Compartilhamento de código entre plataformas
 - **Jetpack Compose Multiplatform** - Framework de UI declarativa
-- **Kotlin 2.2.0** - Linguagem de programação
-- **Kotlin Coroutines** - Programação assíncrona
-- **Kotlinx Serialization** - Serialização JSON
+- **Kotlin 2.3.0** - Linguagem de programação
+- **Kotlin Coroutines 1.10.2** - Programação assíncrona
+- **Kotlinx Serialization 1.9.0** - Serialização JSON
 
 ### Dependency Injection
 
 - **Koin 4.1.0** - Framework de injeção de dependências
-    - `koin-core` - Core multiplataforma
-    - `koin-android` - Extensões Android
-    - `koin-compose-viewmodel` - Integração com ViewModels no Compose
+  - `koin-core` - Core multiplataforma
+  - `koin-android` - Extensões Android
+  - `koin-compose-viewmodel` - Integração com ViewModels no Compose
 
 ### Networking
 
 - **Ktor 3.2.1** - Cliente HTTP multiplataforma
-    - `ktor-client-core` - Cliente HTTP base
-    - `ktor-client-okhttp` - Engine Android (OkHttp)
-    - `ktor-client-darwin` - Engine iOS
-    - `ktor-client-content-negotiation` - Negociação de conteúdo
-    - `ktor-serialization-kotlinx-json` - Serialização JSON
-    - `ktor-client-logging` - Logging de requisições
+  - `ktor-client-core` - Cliente HTTP base
+  - `ktor-client-okhttp` - Engine Android (OkHttp)
+  - `ktor-client-darwin` - Engine iOS
+  - `ktor-client-content-negotiation` - Negociação de conteúdo
+  - `ktor-serialization-kotlinx-json` - Serialização JSON
+  - `ktor-client-logging` - Logging de requisições
 
 ### Database
 
 - **Room 2.7.2** - Biblioteca de persistência Android
-    - SQLite como banco de dados local
-    - SQLite Bundled 2.5.2 - SQLite multiplataforma
-    - KSP (Kotlin Symbol Processing) para geração de código
+  - SQLite como banco de dados local
+  - SQLite Bundled 2.5.2 - SQLite multiplataforma
+  - KSP (Kotlin Symbol Processing) para geração de código
 
 ### UI & Navigation
 
-- **Compose Multiplatform 1.8.2**
-    - UI declarativa e compartilhada
-    - Material 3 Design System
-    - Preview e tooling
+- **Compose Multiplatform 1.10.0**
+  - UI declarativa e compartilhada
+  - Material 3 Design System
+  - Preview e tooling
 - **Navigation Compose 2.9.0-beta03** - Navegação entre telas
 - **Kamel 1.0.6** - Carregamento e cache de imagens
-    - `kamel-image` - Core de imagens
-    - `kamel-image-compose` - Integração com Compose
+  - `kamel-image` - Core de imagens
+  - `kamel-image-compose` - Integração com Compose
 
 ### Lifecycle & State
 
-- **AndroidX Lifecycle 2.9.1**
-    - `lifecycle-viewmodel` - ViewModels
-    - `lifecycle-runtime-compose` - Runtime para Compose
+- **AndroidX Lifecycle 2.9.6**
+  - `lifecycle-viewmodel` - ViewModels
+  - `lifecycle-runtime-compose` - Runtime para Compose
 
 ### Code Quality
 
@@ -128,7 +129,7 @@ gnixpokedex/
 
 ### iOS Interoperability
 
-- **SKIE 0.10.4** - Melhora a interoperabilidade Kotlin-Swift
+- **SKIE 0.10.10** - Melhora a interoperabilidade Kotlin-Swift
 
 ## 📱 Plataformas Suportadas
 
@@ -150,15 +151,16 @@ gnixpokedex/
 
 ```bash
 # Windows
-.\gradlew.bat :androidApp:assembleDebug
+.\gradlew.bat :composeApp:assembleDebug
 
 # macOS/Linux
-./gradlew :androidApp:assembleDebug
+./gradlew :composeApp:assembleDebug
 ```
 
 **Via Android Studio:**
+
 1. Abra o projeto no Android Studio
-2. Selecione o módulo `androidApp` como run configuration
+2. Selecione o módulo `composeApp` como run configuration
 3. Execute o aplicativo
 
 ### Build e Executar no iOS
@@ -177,8 +179,8 @@ xcodebuild -workspace iosApp.xcworkspace -scheme iosApp -configuration Debug
 ## 📦 Estrutura de Dependências
 
 ```
-androidApp
-  └── shared
+composeApp
+  └── (dependências cores e features)
       ├── core:common
       ├── core:model
       ├── core:domain
